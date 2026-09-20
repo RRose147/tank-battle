@@ -3,19 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>钢铁边境 | 坦克大战</title>
+	<title>钢铁边境 | 坦克大战 v2</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<main class="game-shell">
 		<header class="topbar">
-			<div><p class="eyebrow">IRON FRONTIER / 01</p><h1>钢铁边境</h1></div>
+			<div><p class="eyebrow">IRON FRONTIER / VERSION 3.0</p><h1>钢铁边境</h1></div>
 			<div class="mission-state" id="missionState">作战中</div>
 		</header>
 		<section class="hud" aria-label="游戏状态">
 			<div class="stat"><span>分数</span><strong id="score">0000</strong></div>
 			<div class="stat"><span>生命</span><strong id="lives">03</strong></div>
-			<div class="stat"><span>敌军</span><strong id="enemies">04</strong></div>
+			<div class="stat"><span>敌军</span><strong id="enemies">00</strong></div>
+			<div class="stat"><span>波次</span><strong id="wave">01</strong></div>
+			<div class="stat"><span>版本</span><strong id="version">4.0</strong></div>
+			<div class="stat"><span>地图</span><strong id="mapName">荒原</strong></div>
+			<div class="stat"><span>难度</span><strong id="difficulty">NORMAL</strong></div>
+			<div class="stat"><span>武器</span><strong id="weapon">L1</strong></div>
+			<div class="stat"><span>护盾</span><strong id="shield">100%</strong></div>
+			<div class="stat"><span>能量</span><strong id="charge">100%</strong></div>
 			<button class="restart-button" id="restartButton" type="button">重新开始</button>
 		</section>
 		<section class="battlefield-wrap">
@@ -25,7 +32,7 @@
 				<p id="overlayCopy">边境暂时安全。</p><button class="primary-button" id="overlayButton" type="button">再次出击</button>
 			</div>
 		</section>
-		<footer class="controls"><span><b>WASD</b> 移动</span><span><b>方向键</b> 瞄准</span><span><b>空格</b> 开火</span><span class="tip">摧毁所有敌方坦克，守住基地</span></footer>
+		<footer class="controls"><span><b>WASD</b> 移动</span><span><b>方向键</b> 瞄准</span><span><b>空格</b> 开火</span><span><b>Shift</b> 冲刺</span><span><b>E</b> 爆发</span><span><b>M</b> 切地图</span><span class="tip">击败 7 波敌人，守住边境</span></footer>
 	</main>
 	<script src="game.js"></script>
 </body>
